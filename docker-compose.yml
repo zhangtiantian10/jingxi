@@ -1,0 +1,20 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: jingxi
+    ports:
+      - 3307:3306
+    environment:
+      - LANG=C.UTF-8
+      - TERM=dumb
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=jingxi
+      - MYSQL_PASSWORD=jingxi
+      - MYSQL_USER=jingxi
+    networks:
+      main:
+        aliases:
+          - jingxi
+networks:
+  main:
