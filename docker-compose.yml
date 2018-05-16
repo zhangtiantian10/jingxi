@@ -10,8 +10,8 @@ services:
       - TERM=dumb
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=jingxi
-      - MYSQL_PASSWORD=jingxi
-      - MYSQL_USER=jingxi
+      - MYSQL_PASSWORD=root
+      - MYSQL_USER=root
     networks:
       main:
         aliases:
